@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target "BiLing" do
+	
+	platform :ios, '8.0'
+	use_frameworks!
+	inhibit_all_warnings!
+
+	pod 'Masonry', '~> 1.1.0'
+
+end
+

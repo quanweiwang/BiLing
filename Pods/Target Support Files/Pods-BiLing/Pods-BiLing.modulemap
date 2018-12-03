@@ -1,0 +1,6 @@
+framework module Pods_BiLing {
+  umbrella header "Pods-BiLing-umbrella.h"
+
+  export *
+  module * { export * }
+}

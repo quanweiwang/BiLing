@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3950C62B05992409BF57580D /* Pods_BiLing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCACEBFACA5ABC5B6010B76 /* Pods_BiLing.framework */; };
 		D672CDA921B553F100A397BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDA821B553F100A397BE /* AppDelegate.m */; };
 		D672CDAC21B553F100A397BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDAB21B553F100A397BE /* ViewController.m */; };
 		D672CDAF21B553F100A397BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D672CDAD21B553F100A397BE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		D672CDB721B553F200A397BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDB621B553F200A397BE /* main.m */; };
 		D672CDC121B553F300A397BE /* BiLingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDC021B553F300A397BE /* BiLingTests.m */; };
 		D672CDCC21B553F300A397BE /* BiLingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDCB21B553F300A397BE /* BiLingUITests.m */; };
+		D672CDDB21B5540600A397BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D672CDDA21B5540600A397BE /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07652F0D84793722D07C99DB /* Pods-BiLing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLing.release.xcconfig"; path = "Target Support Files/Pods-BiLing/Pods-BiLing.release.xcconfig"; sourceTree = "<group>"; };
+		5FAD88A321A4773DB421DAFE /* Pods-BiLing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLing.debug.xcconfig"; path = "Target Support Files/Pods-BiLing/Pods-BiLing.debug.xcconfig"; sourceTree = "<group>"; };
+		6BCACEBFACA5ABC5B6010B76 /* Pods_BiLing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D672CDA421B553F100A397BE /* BiLing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D672CDA721B553F100A397BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D672CDA821B553F100A397BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		D672CDC721B553F300A397BE /* BiLingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiLingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D672CDCB21B553F300A397BE /* BiLingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiLingUITests.m; sourceTree = "<group>"; };
 		D672CDCD21B553F300A397BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D672CDDA21B5540600A397BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D672CDDB21B5540600A397BE /* WebKit.framework in Frameworks */,
+				3950C62B05992409BF57580D /* Pods_BiLing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1F73AB642FAAD6629FD58B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FAD88A321A4773DB421DAFE /* Pods-BiLing.debug.xcconfig */,
+				07652F0D84793722D07C99DB /* Pods-BiLing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D672CD9B21B553F100A397BE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,8 @@
 				D672CDBF21B553F300A397BE /* BiLingTests */,
 				D672CDCA21B553F300A397BE /* BiLingUITests */,
 				D672CDA521B553F100A397BE /* Products */,
+				D672CDD921B5540600A397BE /* Frameworks */,
+				CE1F73AB642FAAD6629FD58B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +151,15 @@
 			path = BiLingUITests;
 			sourceTree = "<group>";
 		};
+		D672CDD921B5540600A397BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D672CDDA21B5540600A397BE /* WebKit.framework */,
+				6BCACEBFACA5ABC5B6010B76 /* Pods_BiLing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D672CDD021B553F300A397BE /* Build configuration list for PBXNativeTarget "BiLing" */;
 			buildPhases = (
+				D0FA8E4683350341A57CF092 /* [CP] Check Pods Manifest.lock */,
 				D672CDA021B553F100A397BE /* Sources */,
 				D672CDA121B553F100A397BE /* Frameworks */,
 				D672CDA221B553F100A397BE /* Resources */,
+				41118A80A855EAF6DFA9DBB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +286,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41118A80A855EAF6DFA9DBB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BiLing/Pods-BiLing-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BiLing/Pods-BiLing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0FA8E4683350341A57CF092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiLing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D672CDA021B553F100A397BE /* Sources */ = {
@@ -433,10 +510,12 @@
 		};
 		D672CDD121B553F300A397BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FAD88A321A4773DB421DAFE /* Pods-BiLing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BiLing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +528,12 @@
 		};
 		D672CDD221B553F300A397BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07652F0D84793722D07C99DB /* Pods-BiLing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BiLing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
