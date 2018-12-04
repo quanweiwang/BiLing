@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3950C62B05992409BF57580D /* Pods_BiLing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BCACEBFACA5ABC5B6010B76 /* Pods_BiLing.framework */; };
+		A940EF5421B64FC300896262 /* LaunchImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A940EF5321B64FC300896262 /* LaunchImage.jpeg */; };
+		A940EF5621B6570900896262 /* a.plist in Resources */ = {isa = PBXBuildFile; fileRef = A940EF5521B6570900896262 /* a.plist */; };
 		D672CDA921B553F100A397BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDA821B553F100A397BE /* AppDelegate.m */; };
 		D672CDAC21B553F100A397BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D672CDAB21B553F100A397BE /* ViewController.m */; };
 		D672CDAF21B553F100A397BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D672CDAD21B553F100A397BE /* Main.storyboard */; };
@@ -40,6 +42,9 @@
 		07652F0D84793722D07C99DB /* Pods-BiLing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLing.release.xcconfig"; path = "Target Support Files/Pods-BiLing/Pods-BiLing.release.xcconfig"; sourceTree = "<group>"; };
 		5FAD88A321A4773DB421DAFE /* Pods-BiLing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiLing.debug.xcconfig"; path = "Target Support Files/Pods-BiLing/Pods-BiLing.debug.xcconfig"; sourceTree = "<group>"; };
 		6BCACEBFACA5ABC5B6010B76 /* Pods_BiLing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiLing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A940EF5121B6346800896262 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		A940EF5321B64FC300896262 /* LaunchImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchImage.jpeg; sourceTree = "<group>"; };
+		A940EF5521B6570900896262 /* a.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = a.plist; sourceTree = "<group>"; };
 		D672CDA421B553F100A397BE /* BiLing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiLing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D672CDA721B553F100A397BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D672CDA821B553F100A397BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +125,7 @@
 		D672CDA621B553F100A397BE /* BiLing */ = {
 			isa = PBXGroup;
 			children = (
+				A940EF5321B64FC300896262 /* LaunchImage.jpeg */,
 				D672CDA721B553F100A397BE /* AppDelegate.h */,
 				D672CDA821B553F100A397BE /* AppDelegate.m */,
 				D672CDAA21B553F100A397BE /* ViewController.h */,
@@ -129,6 +135,7 @@
 				D672CDB221B553F200A397BE /* LaunchScreen.storyboard */,
 				D672CDB521B553F200A397BE /* Info.plist */,
 				D672CDB621B553F200A397BE /* main.m */,
+				A940EF5521B6570900896262 /* a.plist */,
 			);
 			path = BiLing;
 			sourceTree = "<group>";
@@ -154,6 +161,7 @@
 		D672CDD921B5540600A397BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A940EF5121B6346800896262 /* libresolv.9.tbd */,
 				D672CDDA21B5540600A397BE /* WebKit.framework */,
 				6BCACEBFACA5ABC5B6010B76 /* Pods_BiLing.framework */,
 			);
@@ -267,6 +275,8 @@
 			files = (
 				D672CDB421B553F200A397BE /* LaunchScreen.storyboard in Resources */,
 				D672CDB121B553F200A397BE /* Assets.xcassets in Resources */,
+				A940EF5421B64FC300896262 /* LaunchImage.jpeg in Resources */,
+				A940EF5621B6570900896262 /* a.plist in Resources */,
 				D672CDAF21B553F100A397BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,15 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BiLing/Pods-BiLing-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
@@ -315,15 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BiLing-checkManifestLockResult.txt",
 			);
@@ -514,13 +516,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73T3P38PNJ;
 				INFOPLIST_FILE = BiLing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biling.BiLing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blc.blc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,13 +535,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73T3P38PNJ;
 				INFOPLIST_FILE = BiLing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.biling.BiLing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blc.blc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  BiLing
 //
-//  Created by 王权伟 on 2018/12/3.
+//  Created by BiLing on 2018/12/3.
 //  Copyright © 2018 BiLing. All rights reserved.
 //
 
